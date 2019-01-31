@@ -7,22 +7,17 @@
     <title>Document</title>
   </head>
   <body>
-    <input type="text" id="input1" /> <input type="text" id="input2" />
-    <input type="text" id="input3" />
-
+    <input type="date" id="input1" /> <input type="date" id="input2" />
+    <input type="date" id="input3" /> <button class="submit">Submit</button>
     <script>
-      document
-        .getElementById("input1")
-        .addEventListener("submit", handleSubmit1);
-      function handleSubmit1() {}
-      document
-        .getElementById("input2")
-        .addEventListener("submit", handleSubmit2);
-      function handleSubmit2() {}
-      document
-        .getElementById("input3")
-        .addEventListener("submit", handleSubmit3);
-      function handleSubmit3() {}
+      let age =
+        date -
+        document
+          .querySelector(".submit")
+          .addEventListener("click", handleClick);
+      function handleClick() {
+        alert("Your age is " + age);
+      }
     </script>
   </body>
 </html>
