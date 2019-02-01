@@ -18,8 +18,8 @@
   </head>
   <body>
     <button class="button1">Click here!</button>
-    <button id="green ">Click here!</button>
-    <button id="blue">Click here!</button>
+    <button class="button2 ">Click here!</button>
+    <button class="button3">Click here!</button>
     <div class="square"></div>
 
     <script>
@@ -27,7 +27,24 @@
 
       function handleClick() {
         document.querySelector(".square").style.background = "red";
-        console.log("test");
+      }
+
+      document
+        .querySelector(".button2")
+        .addEventListener("click", handleClick2);
+
+      //
+      function handleClick2() {
+        document.querySelector(".square").style.background = "green";
+      }
+
+      document
+        .querySelector(".button3")
+        .addEventListener("click", handleClick3);
+
+      //
+      function handleClick3() {
+        document.querySelector(".square").style.background = "blue";
       }
     </script>
   </body>
