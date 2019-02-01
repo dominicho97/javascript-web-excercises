@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
   </head>
-  <input type="number" id="myText" />
-  <input type="number2" id="myText2" />
+  <input type="number" class="myText" />
+  <input type="number2" class="myText2" />
   <button class="plus">+</button>
   <button class="min">-</button>
   <button class="divide">/</button>
@@ -19,11 +19,39 @@
         .addEventListener("click", handleClickPlus);
       function handleClickPlus() {
         const sum =
-          document.querySelector("mytext").value +
-          document.querySelector("mytext2").value;
+          document.querySelector(".mytext") .value+
+          document.querySelector(".mytext2".).value;
         console.log(sum);
       }
       handleClickPlus();
+
+      document.querySelector(".min").addEventListener("click", handleClickMin);
+      function handleClickMin() {
+        const verschil =
+          document.querySelector(".mytext").value +
+          document.querySelector(".mytext2").value;
+        console.log(verschil);
+      }
+      handleClickMin();
+
+      //
+      document.querySelector(".divide").addEventListener("click", handleClickDivide);
+      function handleClickDivide() {
+        const quotient =
+          document.querySelector(".mytext").value +
+          document.querySelector(".mytext2").value;
+        console.log(quotient);
+      }
+      handleClickDivide();
+      //
+      document.querySelector(".multiply").addEventListener("click", handleClickMultiply);
+      function handleClickMultiply() {
+        const vermenigvuldiging =
+          document.querySelector(".mytext").value +
+          document.querySelector(".mytext2").value;
+        console.log(vermenigvuldiging);
+      }
+      handleClickMultiply();
     </script>
   </body>
 </html>
